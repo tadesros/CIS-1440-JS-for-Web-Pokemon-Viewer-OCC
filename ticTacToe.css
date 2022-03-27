@@ -1,0 +1,94 @@
+/* Base Style Variables */
+:root {
+	--blue: blue;
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: var(--blue);
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+h1 {
+	font-size: 30px;
+	text-align: center;
+}
+.gameStartTxt {
+	text-align: center;
+}
+.time {
+	text-align: left;
+	font-size: 20px;
+}
+.container {
+	padding: 40px;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*	flex-direction: column;*/
+}
+.gameBoard {
+	width: 450px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	background-color: white;
+}
+.cell {
+	height: 150px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--blue);
+	border: 3px solid;
+	background-color: green;
+}
+button {
+	margin-top: 9px;
+	padding: 10px 15px;
+	border-radius: 10px;
+	background-color: var(--blue);
+	color: white;
+	border-color: var(--purple);
+	font-size: 15px;
+}
+button:hover {
+	cursor: pointer;
+}
+/*Hide borders you don't want*/
+.top {
+	border-top: none;
+}
+.left {
+	border-left: none;
+}
+.bottom {
+	border-bottom: none;
+}
+.right {
+	border-right: none;
+}
+.hide {
+	display: none;
+}
+.cell {
+	cursor: pointer;
+	font-size: 120px;
+}
+.unclickable {
+	pointer-events: none;
+}
+input[type="text"] {
+	border: 2px solid blue;
+	border-radius: 4px;
+}
+.input {
+	padding: 6px;
+}
+.inputRadio2 {
+	padding-bottom: 15px;
+}
