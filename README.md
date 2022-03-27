@@ -1,5 +1,3 @@
-#This is an implementation
+# This is a project for my JavaScript for the Web Class
 
----Test
-
--Tet
+- The rule was to not use any outside class libraries.
