@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			} else {
 				//Lock Computer name and put in computer name
 				console.log("PLayer v computer");
-				secondTextInput.value = "Computer Player";
+				secondTextInput.value = "Computer";
 				secondTextInput.disabled = true;
 			}
 		});
@@ -67,8 +67,13 @@ function startGame() {
 		'input[name="playerChoice"]:checked'
 	).value;
 
-	gameData.player1Name = firstTextInput.value;
-	gameData.player2Name = secondTextInput.value;
+	if (gameData.gameMode == "playerVplayer") {
+		gameData.player1Name = firstTextInput.value;
+		gameData.player2Name = secondTextInput.value;
+	} else {
+		gameData.player2Name = firstTextInput.value;
+		gameData.player1Name = secondTextInput.value;
+	}
 
 	//Reset GameTime
 	gameData.gameTime = 0;
@@ -214,6 +219,7 @@ function cpuTakeTurn() {
 			showPlayAgainBtn(true);
 			showRestartBtn(false);
 			lockBoard(true);
+			clearInterval(timerID);
 		}
 		//No-one won unlock board update
 		else {
