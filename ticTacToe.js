@@ -369,10 +369,10 @@ function winner() {
 			gameMoves[2] == gameData.currentPlayerSymbol
 		) {
 			console.log(`${gameData.currentPlayer} wins top row`);
-			//Color winning move red?
-			cells[0].style.color = "red";
-			cells[1].style.color = "red";
-			cells[2].style.color = "red";
+			//Color winning move green?
+			cells[0].style.color = "green";
+			cells[1].style.color = "green";
+			cells[2].style.color = "green";
 
 			return true;
 		}
@@ -383,10 +383,10 @@ function winner() {
 		) {
 			console.log(`${gameData.currentPlayer} wins left`);
 
-			//Color winning move red?
-			cells[0].style.color = "red";
-			cells[3].style.color = "red";
-			cells[6].style.color = "red";
+			//Color winning move green?
+			cells[0].style.color = "green";
+			cells[3].style.color = "green";
+			cells[6].style.color = "green";
 
 			return true;
 		}
@@ -397,10 +397,10 @@ function winner() {
 		) {
 			console.log(`${gameData.currentPlayer} wins diagonally`);
 
-			//Color winning move red?
-			cells[0].style.color = "red";
-			cells[4].style.color = "red";
-			cells[8].style.color = "red";
+			//Color winning move green?
+			cells[0].style.color = "green";
+			cells[4].style.color = "green";
+			cells[8].style.color = "green";
 
 			return true;
 		}
@@ -414,10 +414,10 @@ function winner() {
 		) {
 			console.log(`${gameData.currentPlayer} wins on the right`);
 
-			//Color winning move red?
-			cells[8].style.color = "red";
-			cells[2].style.color = "red";
-			cells[5].style.color = "red";
+			//Color winning move green?
+			cells[8].style.color = "green";
+			cells[2].style.color = "green";
+			cells[5].style.color = "green";
 
 			return true;
 		}
@@ -428,10 +428,10 @@ function winner() {
 		) {
 			console.log(`${gameData.currentPlayer} wins on Bottom`);
 
-			//Color winning move red?
-			cells[8].style.color = "red";
-			cells[6].style.color = "red";
-			cells[7].style.color = "red";
+			//Color winning move green?
+			cells[8].style.color = "green";
+			cells[6].style.color = "green";
+			cells[7].style.color = "green";
 
 			return true;
 		}
@@ -445,10 +445,10 @@ function winner() {
 		) {
 			console.log(`${gameData.currentPlayer} vertically in the middle`);
 
-			//Color winning move red?
-			cells[4].style.color = "red";
-			cells[1].style.color = "red";
-			cells[7].style.color = "red";
+			//Color winning move green?
+			cells[4].style.color = "green";
+			cells[1].style.color = "green";
+			cells[7].style.color = "green";
 
 			return true;
 		}
@@ -459,10 +459,10 @@ function winner() {
 		) {
 			console.log(`${gameData.currentPlayer} wins horizontally`);
 
-			//Color winning move red?
-			cells[4].style.color = "red";
-			cells[3].style.color = "red";
-			cells[5].style.color = "red";
+			//Color winning move green?
+			cells[4].style.color = "green";
+			cells[3].style.color = "green";
+			cells[5].style.color = "green";
 
 			return true;
 		}
@@ -473,10 +473,10 @@ function winner() {
 		) {
 			console.log(`${gameData.currentPlayer} wins diagonal`);
 
-			//Color winning move red?
-			cells[4].style.color = "red";
-			cells[2].style.color = "red";
-			cells[6].style.color = "red";
+			//Color winning move green?
+			cells[4].style.color = "green";
+			cells[2].style.color = "green";
+			cells[6].style.color = "green";
 			return true;
 		}
 	}
