@@ -4,59 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="ticTacToe.css">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <!--Main Menu-->
-        <div class="mainMenu" id="mainMenu">
-            <h1 id="welcomeMenu">Welcome to Tic-Tac-Toe</h1>
-            <p>Select a game mode:</p>
-            <div class="inputRadio1">
-                <input type="radio" id="playerVplayer" name="playerChoice" value="playerVplayer" checked>
-                <label for="playerVplayer">Player v Player</label>
+
+
+    <h2>Pokemon Compare</h2>
+
+
+    <ul class="cards">
+        <!--Left Pokemon-->
+        <li class="cards__item">
+            <div class="card">
+                <div class="container">
+                    <img class="card_image" id="pokeImg1" src=" " alt="pokemon">
+                    <div class="text-block">
+                        <p id="idImgText1">Image 1 of 3</p>
+                        <p>Click for a new view.</p>
+                    </div>
+                </div>
+
+                <div class="card__content">
+                    <div id="pokeName1" class="card__title">Flex Grow</div>
+                    <button id="btn1_get_random" class="btn btn--block card__btn button1">Get Random Pokemon</button>
+                    <!--Pokemon name input-->
+                    <input type="text" class="inputBox" id="txtPokemonName1"
+                        placeholder="Search for a Pokemon by Name" />
+                    <button id="btn1_get_data" class="btn btn--block card__btn button1">Get Pokemon by Name</button>
+                    <!--Pokemon stats-->
+                    <div id="pokeCont1" class="cart_text">
+                    </div>
+                </div>
             </div>
-            <div class="inputRadio2">
-                <input type="radio" id="playerVcomputer" name="playerChoice" value="playerVcomputer">
-                <label for="playerVcomputer">Player v Computer</label>
+        </li>
+        <!--Right Pokemon-->
+        <li class="cards__item">
+            <div class="card">
+
+                <div class="container">
+                    <img class="card_image" id="pokeImg2" src=" " alt="pokemon">
+                    <div class="text-block">
+                        <p id="idImgText2">Image 1 of 3</p>
+                        <p>Click for a new view.</p>
+                    </div>
+                </div>
+
+                <div class="card__content">
+                    <div id="pokeName2" class="card__title">Flex Grow</div>
+                    <button id="btn2_get_random" class="btn button1 btn--block card__btn">Get Random Pokemon</button>
+                    <!--Pokemon name input-->
+                    <input type="text" class="inputBox" id="txtPokemonName2" placeholder="Search for a Pokemon" />
+                    <button id="btn2_get_data" class="btn button1 btn--block card__btn">Get Pokemon by Name</button>
+                    <!--Pokemon stats-->
+                    <div id="pokeCont2" class="cart_text">
+                    </div>
+                </div>
             </div>
-            <p>The order of the names will not affect the order of play.</p>
-            <div class="input">
-                <label for="firstEntry">Player Name:</label>
-                <input type="text" maxlength="20" id="firstEntry" name="firstEntry" value="Player 1">
-            </div>
-            <div class="input">
-                <label for="secondEntry">Player Name:</label>
-                <input type="text" maxlength="20" id="secondEntry" name="secondEntry" value="Player 2">
-            </div>
-            <button id="btnStartGame">Start Game</button>
-        </div>
-        <!--Main Game Screen-->
-        <div class="gameScreen" id="gameScreen">
-            <h1 class="gameStartTxt" id="gameStartTxt">Let's Play</h1>
-            <div class="gameBoard" id="gameBoard">
-                <div class="cell top left" id="0">a</div>
-                <div class="cell top" id="1">a</div>
-                <div class="cell top right" id="2">a</div>
-                <div class="cell left" id="3">a</div>
-                <div class="cell" id="4">a</div>
-                <div class="cell right" id="5">a</div>
-                <div class="cell bottom left" id="6">a</div>
-                <div class="cell bottom" id="7">a</div>
-                <div class="cell bottom right" id="8">a</div>
-            </div>
-            <div class="bottomOptions" id="bottomOptions">
-                <h1 class="time" id="time">Time: <span id="timeValue"></span> seconds
-                </h1>
-                <button id="btnRestart">Restart</button>
-                <button id="btnPlayAgain">Play Again?</button>
-            </div>
-        </div>
-        <!--Script Files-->
-        <script src="ticTacToe.js"></script>
-    </div>
+        </li>
+    </ul>
+    <!--Script Files-->
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,152 @@
+html {
+	background-color: #a69e9e;
+}
+h2 {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	color: #2a5f99;
+	text-transform: uppercase;
+}
+body {
+	color: #ceaeae;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0;
+	padding: 1rem;
+}
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.cards__item {
+	display: flex;
+	padding: 4rem;
+	@media (min-width: 40rem) {
+		width: 50%;
+	}
+	@media (min-width: 56rem) {
+		width: 33.3333%;
+	}
+}
+.card {
+	background-color: rgb(253, 253, 253);
+	border-radius: 1rem;
+	box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+		0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.card__content {
+	display: flex;
+	/* for this */
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+
+	flex-direction: column;
+	padding: 1rem;
+}
+.card__image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+	filter: contrast(70%);
+	overflow: hidden;
+	position: relative;
+	transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+.card__title {
+	color: grey;
+	font-size: 1.25rem;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.card__text {
+	flex: 1 1 auto;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	margin-bottom: 1.25rem;
+}
+#pokeImg1 {
+	background-color: rgb(119, 177, 253);
+	width: 500px;
+	height: 550px;
+}
+#pokeImg2 {
+	background-color: rgb(119, 177, 253);
+	width: 500px;
+	height: 550px;
+}
+.btn {
+	background-color: rgb(139, 205, 226);
+	border: 1px solid #cccccc;
+	color: #696969;
+	padding: 0.5rem;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.btn--block {
+	display: block;
+	width: 50%;
+}
+.inputBox {
+	display: block;
+	width: 46%;
+	background-color: white;
+	border: 1px solid #008cba;
+	color: #696969;
+	padding: 0.5rem;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.button1 {
+	border: none;
+	color: white;
+	padding: 5px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+.button1 {
+	background-color: white;
+	color: black;
+	border: 2px solid #008cba;
+}
+.button1:hover {
+	background-color: #008cba;
+	color: white;
+}
+
+.container {
+	position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+	position: absolute;
+	bottom: 470px;
+	right: 5px;
+	background-color: none;
+	color: whitesmoke;
+	padding-left: 300px;
+	padding-right: 10px;
+}
